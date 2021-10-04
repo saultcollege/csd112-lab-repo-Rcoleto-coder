@@ -10,11 +10,29 @@
       content="This is my website, where you can know more about me and the things that I like."
     />
     <!-- Favicon lines -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/Favicon/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/Favicon/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/Favicon/favicon-16x16.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/Favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/Favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/Favicon/favicon-16x16.png"
+    />
     <link rel="manifest" href="/Favicon/site.webmanifest" />
-    <link rel="mask-icon" href="/Favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <link
+      rel="mask-icon"
+      href="/Favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
     <!-- End of Favicon lines -->
@@ -34,7 +52,14 @@
       </header>
       <main>
         <h1>Welcome to Rafael’s Website</h1>
-
+        <a href="images/Me.jpg">
+          <img
+            src="images/me_300x300.jpg"
+            alt="My profile photo thumbnail"
+            sizes="(max-width: 500px) 150px, 300px"
+            srcset="images/me_150x150.jpg 150w, images/me_300x300.jpg 300w"
+          />
+        </a>
         <p>Hello! My name is Rafael and I am a student at Sault College</p>
         <p>
           I am current enrolled in the Computer Programming program, I love
@@ -44,15 +69,25 @@
         <p>Welcome to my webpage and have a good browsing :)</p>
 
         <h2>My Favourite Things</h2>
-        <a href="http://www.angra.net/">
-          <img src="images/logo.jpg" alt="angra" />
-        </a>
-        <a href="https://www.rush.com/">
-          <img src="images/logoRush.jpg" alt="rush" />
-        </a>
-        <a href="https://www.hammerfall.net/">
-          <img src="images/hammer.jpg" alt="hammerfall" />
-        </a>
+        <figure>
+          <a href="http://www.angra.net/">
+            <img src="images/logo.jpg" alt="Angra's website" />
+          </a>
+          <figcaption><strong>Angra's website</strong></figcaption>
+        </figure>
+        <figure>
+          <a href="https://www.rush.com/">
+            <img src="images/logoRush.jpg" alt="Rush's website" />
+          </a>
+          <figcaption><strong>Rush's website</strong></figcaption>
+        </figure>
+        <figure>
+          <a href="https://www.hammerfall.net/">
+            <img src="images/hammer.jpg" alt="HammerFall Website" />
+          </a>
+          <figcaption><strong>HammerFall Website</strong></figcaption>
+        </figure>
+
         <h3>My Favourite Games</h3>
         <ol>
           <li>Overwatch</li>
@@ -66,6 +101,26 @@
           goes through the water.<br />
           <cite>by <span class="author">Masaoka Shiki</span></cite>
         </p>
+        <h3>Public Domain Audiobook</h3>
+        <audio controls>
+          <source
+          src=http://www.archive.org/download/mlaw010_2109_librivox/mlaw010_10_various_128kb.mp3>
+          <a
+            href="https://ia801403.us.archive.org/19/items/mlaw010_2109_librivox/mlaw010_10_various_128kb.mp3"
+            >Download Audiobook</a
+          >
+        </audio>
+        <br />
+        <br />
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/HeQX2HjkcNo"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
       </main>
       <footer>
         <hr />
@@ -86,6 +141,19 @@
             Rafael Coleto</a
           >
         </p>
+        <picture>
+          <source type="image/svg+xml" srcset="images/sc-logo.svg" />
+          <img
+            src="images/sc-logo.png"
+            alt="Sault College logo"
+            width="70"
+            srcset="
+              images/sc-logo.png,
+              images/sc-logo@1.5x.png 1.5x,
+              images/sc-logo@2x.png   2x
+            "
+          />
+        </picture>
       </footer>
 
       <a href="#top" title="Back to top">◤</a>
