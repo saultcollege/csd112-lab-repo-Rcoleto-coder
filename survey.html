@@ -98,8 +98,8 @@
               >Which bear is best?
               <abbr title="required" aria-label="required">*</abbr>
             </label>
-            <select name="best_bear" id="best_bear">
-              <option value="blank" label=" " selected></option>
+            <select name="best_bear" id="best_bear" required>
+              <option value="" selected>&nbsp;</option>
               <option value="black_bear">Black</option>
               <option value="brown_bear">Brown</option>
               <option value="care_bear">Care</option>
@@ -123,7 +123,7 @@
                 <input
                   type="radio"
                   name="option"
-                  value="none_of_your_bussiness"
+                  value="?"
                   id="option_noyb"
                   checked
                 />
