@@ -47,8 +47,8 @@ h3 {
   color: #7b3f00;
 }
 
-main a {
-  color: #1e5128;
+a {
+  color: darkred;
 }
 
 header nav a {
@@ -104,6 +104,27 @@ td {
   background-color: rgba(000, 000, 000, 0.05);
 }
 
-tbody tr:nth-child(even) td{
+tbody tr:nth-child(even) td {
   background-color: rgba(000, 000, 000, 0.15);
+}
+
+/* Form Styling */
+
+label {
+  display: block;
+}
+
+fieldset label {
+  display: inline;
+}
+
+*[type="submit"] {
+  border: none;
+  padding: 1em 3em;
+  background-color: #7c341a;
+  color: #dfe8d7;
+}
+
+input:invalid {
+  background-color: rgba(255, 000, 000, 0.1);
 }
