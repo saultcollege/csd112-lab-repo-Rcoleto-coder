@@ -65,7 +65,7 @@ header nav a:hover {
 }
 
 ::selection {
-  background-color: lightgreen;
+  background-color: lightyellow;
 }
 
 header {
@@ -85,4 +85,25 @@ header nav ul {
 
 header li {
   display: inline;
+}
+
+/* Table Styling */
+
+td,
+th {
+  padding: 0.3em 1em;
+}
+
+thead,
+tfoot,
+tbody th {
+  background-color: rgba(000, 000, 000, 0.2);
+}
+
+td {
+  background-color: rgba(000, 000, 000, 0.05);
+}
+
+tbody tr:nth-child(even) td{
+  background-color: rgba(000, 000, 000, 0.15);
 }
