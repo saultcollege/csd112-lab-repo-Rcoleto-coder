@@ -93,7 +93,7 @@ td,
 th {
   padding: 0.3em 1em;
 }
-
+/* Lab 05 Feedback - Select the cells (td) in head and foot and select every th  */
 thead td,
 tfoot td,
 th {
