@@ -94,9 +94,9 @@ th {
   padding: 0.3em 1em;
 }
 
-thead,
-tfoot,
-tbody th {
+thead td,
+tfoot td,
+th {
   background-color: rgba(000, 000, 000, 0.2);
 }
 
