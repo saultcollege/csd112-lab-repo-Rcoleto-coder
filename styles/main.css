@@ -174,21 +174,20 @@ h1 {
 div .bio {
   column-count: 3;
   column-gap: 2em;
-  
 }
 /* Table in div class bio styling */
-div .bio table{
+div .bio table {
   column-span: all;
   margin-top: 1em;
   border-collapse: collapse;
   caption-side: bottom;
 }
 
-img{
+img {
   max-width: 100%;
 }
 
-div .bio img{
+div .bio img {
   padding: 2%;
   background-color: rgb(255, 255, 255);
   box-shadow: 2px 2px 20px rgba(124, 52, 26, 0.9);
@@ -199,10 +198,10 @@ footer {
   font-size: 75%;
   text-align: center;
 }
- a[href = "#top"] {
+a[href="#top"] {
   text-shadow: 2px 2px 5px rgba(124, 52, 26, 0.5);
- }
+}
 
- a[href = "#top"]:hover {
+a[href="#top"]:hover {
   text-decoration: none;
 }
