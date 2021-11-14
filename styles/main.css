@@ -190,8 +190,8 @@ img {
 div .bio img {
   padding: 2%;
   background-color: rgb(255, 255, 255);
-  box-shadow: 2px 2px 20px rgba(124, 52, 26, 0.9);
-  border-radius: 150px;
+  box-shadow: 2px 2px 10px rgba(124, 52, 26, 0.9);
+  
 }
 
 footer {
