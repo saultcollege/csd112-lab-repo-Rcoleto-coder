@@ -153,8 +153,11 @@ iframe {
   border-top-right-radius: 2em;
   border-bottom-left-radius: 2em;
 }
-fieldset li {
+fieldset ul {
   padding: 0;
+}
+
+fieldset li {
   list-style-type: none;
 }
 
