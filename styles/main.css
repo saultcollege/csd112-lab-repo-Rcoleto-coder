@@ -100,8 +100,11 @@ header nav ul {
   padding: 0;
 }
 
-header li {
-  display: inline;
+header ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  
 }
 
 /* Table Styling */
