@@ -104,7 +104,6 @@ header ul {
   list-style-type: none;
   display: flex;
   justify-content: center;
-  
 }
 
 /* Table Styling */
@@ -209,4 +208,41 @@ a[href="#top"] {
 
 a[href="#top"]:hover {
   text-decoration: none;
+}
+
+.favourites label + div {
+  display: none;
+  width: 100%;
+}
+
+.favourites input:checked + label + div {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(000, 000, 000, 0.15);
+  border: 1px solid rgba(000, 000, 000, 0.2);
+  border-radius: 20px;
+}
+
+.favourites input[type="radio"] {
+  display: none;
+}
+
+.favourites {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid rgba(000, 000, 000, 0.2);
+  border-radius: 20px;
+}
+
+.favourites label {
+  order: -1;
+  flex-grow: 1;
+  border-bottom: 4px solid #ff7b3f00;
+  margin: -4px 1em 0 1em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.favourites label:hover {
+  border-bottom-color: #7b3f00;
 }
