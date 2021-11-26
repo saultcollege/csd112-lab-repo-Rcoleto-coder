@@ -216,6 +216,7 @@ a[href="#top"]:hover {
   text-decoration: none;
   transform: rotate(45deg);
 }
+/* My Favourite section tab styling */
 
 .favourites label + div {
   display: none;
@@ -228,6 +229,7 @@ a[href="#top"]:hover {
   background-color: rgba(000, 000, 000, 0.15);
   border: 1px solid rgba(000, 000, 000, 0.2);
   border-radius: 20px;
+ 
 }
 
 .favourites input[type="radio"] {
@@ -239,6 +241,7 @@ a[href="#top"]:hover {
   flex-wrap: wrap;
   border: 1px solid rgba(000, 000, 000, 0.2);
   border-radius: 20px;
+  
 }
 
 .favourites label {
@@ -248,9 +251,22 @@ a[href="#top"]:hover {
   margin: -4px 1em 0 1em;
   font-weight: 700;
   text-transform: uppercase;
+  transition: transform 0.1s;
+}
+
+.favourites label > h3 {
+  color: rgba(000, 000, 000, 0.35);
 }
 
 .favourites label:hover {
+  border-bottom-color: #7b3f00;
+  transform: scale(1.1);
+}
+.favourites input:checked + label > h3 {
+  color: #7b3f00;
+  border-bottom-color: #7b3f00;
+}
+.favourites input:checked + label {
   border-bottom-color: #7b3f00;
 }
 
@@ -281,16 +297,16 @@ a[href="#top"]:hover {
   box-shadow: 2px 2px 6px rgba(000, 000, 000, 0.4);
 }
 
-div .bio .paperclip{
+div .bio .paperclip {
   background-color: rgba(255, 255, 255, 0);
-  box-shadow: none ;
+  box-shadow: none;
   width: 20%;
   position: absolute;
-  top: -14px ;
+  top: -14px;
   right: -11px;
 }
 
-div .bio a{
+div .bio a {
   display: block;
   position: relative;
 }
