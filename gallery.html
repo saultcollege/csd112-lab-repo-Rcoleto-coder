@@ -61,203 +61,109 @@
             <li><a href="glossary.html">Glossary</a></li>
             <li><a href="survey.html">Survey</a></li>
             <li><a href="lorem.html">Lorem</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
           </ul>
         </nav>
       </header>
       <main>
-        <h1>Welcome to Rafael’s Website</h1>
-        <div class="bio">
-          <a href="images/Me.jpg">
+        <h1>Gallery</h1>
+        <div class="gallery">
+          <a
+            class="row-span-2"
+            href="https://loremflickr.com/1024/1024/?lock=55"
+          >
             <img
-              src="images/me_300x300.jpg"
-              alt="My profile photo thumbnail"
-              sizes="(max-width: 500px) 150px, 300px"
-              srcset="images/me_150x150.jpg 150w, images/me_300x300.jpg 300w"
+              src="https://loremflickr.com/300/600?lock=55"
+              alt="picture of a cat"
             />
           </a>
-          <p>Hello! My name is Rafael and I am a student at Sault College</p>
-          <p>
-            I have an engineering background, with experience in automation, oil
-            and gas metering systems and temperature controller for plastic
-            molding machines as well.
-          </p>
-          <p>
-            I am current enrolled in the Computer Programming program, I love
-            technology and like to play games on PC.
-          </p>
-          <p>Furthermore, I like to listen to music and play drums.</p>
-          <p>Welcome to my webpage and have a good browsing :)</p>
-
-          <table>
-            <caption>
-              Table 1. Current Courses
-            </caption>
-            <thead>
-              <tr>
-                <th rowspan="2" scope="col">Term</th>
-                <th colspan="3" scope="colgroup">Course</th>
-              </tr>
-              <tr>
-                <th scope="col">Code</th>
-                <th scope="col">Name</th>
-                <th scope="col">Hrs/Week</th>
-              </tr>
-            </thead>
-            <tbody>
-              <!-- Fall Term -->
-              <tr>
-                <th rowspan="6" scope="rowgroup">Fall</th>
-                <td>CSD110</td>
-                <td>Intro to Programming</td>
-                <td>4</td>
-              </tr>
-              <tr>
-                <td>CMM115</td>
-                <td>Communications I</td>
-                <td>2</td>
-              </tr>
-              <tr>
-                <td>CSD112</td>
-                <td>Intro to Web Development</td>
-                <td>4</td>
-              </tr>
-
-              <tr>
-                <td>CSD111</td>
-                <td>Computing Environments</td>
-                <td>3</td>
-              </tr>
-              <tr>
-                <td>MTH123</td>
-                <td>Computer Mathematics</td>
-                <td>3</td>
-              </tr>
-              <tr>
-                <td>TNY130</td>
-                <td>Technology in Society</td>
-                <td>2</td>
-              </tr>
-
-              <!-- Winter Term -->
-              <tr>
-                <th rowspan="5" scope="rowgroup">Winter</th>
-                <td>CSA103</td>
-                <td>Bussiness Applications I</td>
-                <td>4</td>
-              </tr>
-              <tr>
-                <td>CSD103</td>
-                <td>Programming Using C++</td>
-                <td>5</td>
-              </tr>
-              <tr>
-                <td>CSD212</td>
-                <td>Web Scripting Languages</td>
-                <td>4</td>
-              </tr>
-
-              <tr>
-                <td>CSO102</td>
-                <td>Introduction to Linux</td>
-                <td>4</td>
-              </tr>
-              <tr>
-                <td>CST104</td>
-                <td>PC Hardware and Networking</td>
-                <td>5</td>
-              </tr>
-            </tbody>
-            <tfoot>
-              <tr>
-                <th colspan="3" scope="row">Total</th>
-                <td>40</td>
-              </tr>
-            </tfoot>
-          </table>
-        </div>
-
-        <h2>My Favourite Things</h2>
-
-        <div class="favourites">
-          <input type="radio" name="tab_layout" id="tab1" checked />
-          <label for="tab1">
-            <h3>Bands</h3>
-          </label>
-          <div>
-            <figure>
-              <a href="http://www.angra.net/">
-                <img src="images/logo.jpg" alt="Angra's website" />
-              </a>
-              <figcaption><strong>Angra's website</strong></figcaption>
-            </figure>
-            <figure>
-              <a href="https://www.rush.com/">
-                <img src="images/logoRush.jpg" alt="Rush's website" />
-              </a>
-              <figcaption><strong>Rush's website</strong></figcaption>
-            </figure>
-            <figure>
-              <a href="https://www.hammerfall.net/">
-                <img src="images/hammer.jpg" alt="HammerFall Website" />
-              </a>
-              <figcaption><strong>HammerFall Website</strong></figcaption>
-            </figure>
-          </div>
-
-          <input type="radio" name="tab_layout" id="tab2" />
-          <label for="tab2">
-            <h3>Games</h3>
-          </label>
-          <div>
-            <ol>
-              <li>Overwatch</li>
-              <li>Resident Evil 3</li>
-              <li>Uncharted 4</li>
-            </ol>
-          </div>
-
-          <input type="radio" name="tab_layout" id="tab3" />
-          <label for="tab3">
-            <h3>Haiku</h3>
-          </label>
-          <div>
-            <p>
-              The summer river:<br />
-              although there is a bridge, my horse <br />
-              goes through the water.<br />
-              <cite>by <span class="author">Masaoka Shiki</span></cite>
-            </p>
-          </div>
-          <input type="radio" name="tab_layout" id="tab4" />
-          <label for="tab4">
-            <h3>Public Domain Audiobook</h3>
-          </label>
-          <div>
-            <audio controls>
-              <source
-              src=http://www.archive.org/download/mlaw010_2109_librivox/mlaw010_10_various_128kb.mp3>
-              <a
-                href="https://ia801403.us.archive.org/19/items/mlaw010_2109_librivox/mlaw010_10_various_128kb.mp3"
-                >Download Audiobook</a
-              >
-            </audio>
-          </div>
-
-          <input type="radio" name="tab_layout" id="tab5" />
-          <label for="tab5">
-            <h3>YouTube Video</h3>
-          </label>
-          <div>
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/HeQX2HjkcNo"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-          </div>
+          <a href="https://loremflickr.com/1024/1024/?lock=60">
+            <img
+              src="https://loremflickr.com/300/300?lock=60"
+              alt="picture of a cat"
+            />
+          </a>
+          <a href="https://loremflickr.com/1024/1024/?lock=70">
+            <img
+              src="https://loremflickr.com/300/300?lock=70"
+              alt="picture of a cat"
+            />
+          </a>
+          <a href="https://loremflickr.com/1024/1024/?lock=80">
+            <img
+              src="https://loremflickr.com/300/300?lock=80"
+              alt="picture of a cat"
+            />
+          </a>
+          <a href="https://loremflickr.com/1024/1024/?lock=90">
+            <img
+              src="https://loremflickr.com/300/300?lock=90"
+              alt="picture of a cat"
+            />
+          </a>
+          <a href="https://loremflickr.com/1024/1024/?lock=40">
+            <img
+              src="https://loremflickr.com/300/300?lock=40"
+              alt="picture of a cat"
+            />
+          </a>
+          <a href="https://loremflickr.com/1024/1024/?lock=30">
+            <img
+              src="https://loremflickr.com/300/300?lock=30"
+              alt="picture of a cat"
+            />
+          </a>
+          <a href="https://loremflickr.com/1024/1024/?lock=20">
+            <img
+              src="https://loremflickr.com/300/300?lock=20"
+              alt="picture of a cat"
+            />
+          </a>
+          <a href="https://loremflickr.com/1024/1024/?lock=10">
+            <img
+              src="https://loremflickr.com/300/300?lock=10"
+              alt="picture of a cat"
+            />
+          </a>
+          <a
+            class="row-span-2 col-span-2"
+            href="https://loremflickr.com/1024/1024/?lock=100"
+          >
+            <img
+              src="https://loremflickr.com/600/600?lock=100"
+              alt="picture of a cat"
+            />
+          </a>
+          <a href="https://loremflickr.com/1024/1024/?lock=110">
+            <img
+              src="https://loremflickr.com/300/300?lock=110"
+              alt="picture of a cat"
+            />
+          </a>
+          <a href="https://loremflickr.com/1024/1024/?lock=120">
+            <img
+              src="https://loremflickr.com/300/300?lock=120"
+              alt="picture of a cat"
+            />
+          </a>
+          <a href="https://loremflickr.com/1024/1024/?lock=130">
+            <img
+              src="https://loremflickr.com/300/300?lock=130"
+              alt="picture of a cat"
+            />
+          </a>
+          <a href="https://loremflickr.com/1024/1024/?lock=140">
+            <img
+              src="https://loremflickr.com/300/300?lock=140"
+              alt="picture of a cat"
+            />
+          </a>
+          <a href="https://loremflickr.com/1024/1024/?lock=160">
+            <img
+              src="https://loremflickr.com/300/300?lock=160"
+              alt="picture of a cat"
+            />
+          </a>
         </div>
       </main>
       <footer>
