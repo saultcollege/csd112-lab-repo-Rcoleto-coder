@@ -285,11 +285,11 @@ a[href="#top"]:hover {
 }
 
 .gallery .row-span-2 {
-  grid-row: 1 / span 2;
+  grid-row: span 2;
 }
 
 .gallery .row-span-2.col-span-2 {
-  grid-column: 2 / span 2;
+  grid-column: span 2;
 }
 
 .gallery a:hover {
