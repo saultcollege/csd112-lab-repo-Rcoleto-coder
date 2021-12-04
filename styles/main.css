@@ -106,16 +106,19 @@ header ul {
   justify-content: center;
 }
 
-@media screen and (max-width: 720px){
-  header nav ul{
+@media screen and (max-width: 720px) {
+  header nav ul {
     flex-direction: column;
     align-items: center;
+    height: 0;
+    overflow: hidden;
+    transition: height 200ms;
   }
-  header nav a{
+  header nav a {
     padding-top: 0.5em;
     border-top: none;
   }
-  header nav a:hover{
+  header nav a:hover {
     text-decoration: underline;
   }
 }
@@ -230,7 +233,7 @@ div .bio table {
   }
   /* Adding this rule to change flex direction of 
      the tab 'Bands' in my favourites flex container*/
-  .favourites div:first-of-type{
+  .favourites div:first-of-type {
     flex-direction: column;
   }
 }
@@ -304,7 +307,7 @@ a[href="#top"]:hover {
 
 .favourites label:hover {
   border-bottom-color: #7b3f00;
-  transform: scale(1.08);
+  transform: scale(1.05);
 }
 .favourites input:checked + label > h3 {
   color: #7b3f00;
@@ -321,7 +324,6 @@ a[href="#top"]:hover {
   .favourites > label {
     order: 0;
   }
-
 }
 
 /* Gallery styling */
@@ -374,4 +376,42 @@ div .bio .paperclip {
 div .bio a {
   display: inline-block;
   position: relative;
+}
+
+/* Sandwich icon styling */
+
+nav input:first-child,
+nav label:first-child {
+  display: none;
+}
+
+@media screen and (max-width: 720px) {
+  nav .sandwich-icon {
+    display: block;
+    width: 40px;
+    height: 25px;
+    border-top: 5px solid #7b3f00;
+    cursor: pointer;
+    margin: 1em auto;
+    position: relative;
+  }
+  nav .sandwich-icon::before {
+    content: "";
+    display: block;
+    width: 40px;
+    border-top: 5px solid #7b3f00;
+    position: absolute;
+    top: 5px;
+  }
+  nav .sandwich-icon::after {
+    content: "";
+    display: block;
+    width: 40px;
+    border-top: 5px solid #7b3f00;
+    position: absolute;
+    top: 15px;
+  }
+  nav #menu-toggle:checked + .sandwich-icon + ul {
+    height: 200px;
+  }
 }
