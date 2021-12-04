@@ -394,6 +394,7 @@ nav label:first-child {
     cursor: pointer;
     margin: 1em auto;
     position: relative;
+  
   }
   nav .sandwich-icon::before {
     content: "";
@@ -402,6 +403,7 @@ nav label:first-child {
     border-top: 5px solid #7b3f00;
     position: absolute;
     top: 5px;
+    transition: transform 150ms;
   }
   nav .sandwich-icon::after {
     content: "";
@@ -410,8 +412,20 @@ nav label:first-child {
     border-top: 5px solid #7b3f00;
     position: absolute;
     top: 15px;
+    transition: transform 150ms
+    
   }
   nav #menu-toggle:checked + .sandwich-icon + ul {
     height: 200px;
+  }
+  nav #menu-toggle:checked + .sandwich-icon {
+    border-top-color: rgba(0, 0, 0, 0);
+  }
+  nav #menu-toggle:checked + .sandwich-icon::before {
+    transform: rotate(45deg);
+  }
+  nav #menu-toggle:checked + .sandwich-icon::after {
+    top: 5px;
+    transform: rotate(-45deg);
   }
 }
