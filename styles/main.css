@@ -106,6 +106,19 @@ header ul {
   justify-content: center;
 }
 
+@media screen and (max-width: 720px){
+  header nav ul{
+    flex-direction: column;
+    align-items: center;
+  }
+  header nav a{
+    padding-top: 0.5em;
+    border-top: none;
+  }
+  header nav a:hover{
+    text-decoration: underline;
+  }
+}
 /* Table Styling */
 
 td,
@@ -190,6 +203,38 @@ div .bio table {
   caption-side: bottom;
 }
 
+@media screen and (max-width: 530px) {
+  thead td,
+  tfoot td,
+  th {
+    display: none;
+  }
+  td {
+    display: block;
+    padding: 0 1rem;
+  }
+  div .bio table {
+    caption-side: top;
+  }
+  tbody tr td:first-of-type {
+    padding-top: 0.3em;
+    font-weight: 700;
+  }
+  tbody tr td:last-of-type {
+    padding-top: 0.3em;
+    font-style: italic;
+    font-size: 0.8em;
+  }
+  tbody tr td:last-of-type::after {
+    content: " hrs/wk";
+  }
+  /* Adding this rule to change flex direction of 
+     the tab 'Bands' in my favourites flex container*/
+  .favourites div:first-of-type{
+    flex-direction: column;
+  }
+}
+
 img {
   max-width: 100%;
 }
@@ -243,14 +288,14 @@ a[href="#top"]:hover {
   border-radius: 20px;
 }
 
-.favourites label {
+.favourites > label {
   order: -1;
   flex-grow: 1;
   border-bottom: 4px solid #ff7b3f00;
   margin: -4px 1em 0 1em;
   font-weight: 700;
   text-transform: uppercase;
-  transition: transform 0.1s;
+  transition: transform 100ms;
 }
 
 .favourites label > h3 {
@@ -259,7 +304,7 @@ a[href="#top"]:hover {
 
 .favourites label:hover {
   border-bottom-color: #7b3f00;
-  transform: scale(1.1);
+  transform: scale(1.08);
 }
 .favourites input:checked + label > h3 {
   color: #7b3f00;
@@ -267,6 +312,16 @@ a[href="#top"]:hover {
 }
 .favourites input:checked + label {
   border-bottom-color: #7b3f00;
+}
+
+@media screen and (max-width: 800px) {
+  .favourites {
+    flex-direction: column;
+  }
+  .favourites > label {
+    order: 0;
+  }
+
 }
 
 /* Gallery styling */
@@ -297,9 +352,8 @@ a[href="#top"]:hover {
   }
 }
 
-.gallery a{
-transition: transform 200ms;
-
+.gallery a {
+  transition: transform 200ms;
 }
 
 .gallery a:hover {

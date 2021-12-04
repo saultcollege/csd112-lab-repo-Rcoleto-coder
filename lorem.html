@@ -16,7 +16,7 @@
 
     <!-- Internal Stylesheet -->
     <style>
-      img {
+      p > img {
         margin: 1em;
       }
       footer {
@@ -24,6 +24,22 @@
       }
       .paragraph_5 {
         clear: both;
+      }
+      .float_left {
+        float: left;
+      }
+      .float_right {
+        float: right;
+      }
+      @media screen and (max-width: 560px) {
+        .float_left {
+          display: block;
+          float: none;
+        }
+        .float_right {
+          display: block;
+          float: none;
+        }
       }
     </style>
 
@@ -84,9 +100,9 @@
         <div class="paragraph_1">
           <p>
             <img
-              src="https://loremflickr.com/cache/resized/65535_51361063868_b2d8148e90_320_240_nofilter.jpg"
-              alt="picture of a castle and a lake"
-              style="float: right"
+              src="https://loremflickr.com/320/240/?lock=200"
+              alt="picture of cat"
+              class="float_right"
             />
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
             aliquam, dolor vel elementum pretium, orci nisl bibendum libero,
@@ -107,9 +123,9 @@
         <div class="paragraph_2">
           <p>
             <img
-              src="https://loremflickr.com/cache/resized/65535_51569255153_1cc310bd8e_n_320_240_nofilter.jpg"
-              alt="picture of small village"
-              style="float: left"
+              src="https://loremflickr.com/320/240/?lock=210"
+              alt="picture of cat"
+              class="float_left"
             />
             Donec iaculis dolor at tincidunt tincidunt. Sed tincidunt sapien sed
             enim congue, at mollis ante sodales. Vestibulum congue porttitor
@@ -141,9 +157,9 @@
         <div class="paragraph_4">
           <p>
             <img
-              src="https://loremflickr.com/cache/resized/3931_15228214937_31348a037b_320_240_nofilter.jpg"
-              alt="picture of a garden"
-              style="float: left"
+              src="https://loremflickr.com/320/240/?lock=220"
+              alt="picture of a cat"
+              class="float_left"
             />
             Etiam eu libero venenatis, finibus urna blandit, interdum sapien. Ut
             iaculis lacus tincidunt quam consectetur auctor. Proin venenatis
@@ -161,9 +177,9 @@
         </div>
         <div class="paragraph_5">
           <img
-            src="https://loremflickr.com/cache/resized/65535_51265504333_8acedf69d6_320_240_nofilter.jpg"
-            alt="little tower and houde"
-            style="float: right"
+            src="https://loremflickr.com/320/240/?lock=230"
+            alt="picture of a cat"
+            class="float_right"
           />
           <p>
             Orci varius natoque penatibus et magnis dis parturient montes,
